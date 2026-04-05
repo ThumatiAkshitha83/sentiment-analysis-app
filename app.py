@@ -24,5 +24,5 @@ def predict():
     return render_template('index.html', prediction_text=f"Sentiment: {prediction}")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
 
